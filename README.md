@@ -105,5 +105,5 @@ $ chmod -v 0400 ca.key.pem client.key.pem server.key.pem
 $ chmod -v 0444 ca.pem server.pem client.pem
 ~~~
 
-curl -vvv --cert cli.crt.pem --key cli.key.pem https://0.0.0.0:1200 -k -d 'hola mundo'
+curl -vvv --cert client.pem --key client.key.pem https://0.0.0.0:1200 -k -d 'hola mundo'
 
